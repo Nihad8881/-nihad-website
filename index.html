@@ -224,18 +224,18 @@ footer {
         <a href="#contact" class="btn">Contact Me</a>
     </div>
 </div>
-    <div class="video-container">
-  <h2>My Videos</h2>
+.video-container {
+  width: 120px;
+  margin: 20px auto;
+}
 
-  <video controls playsinline preload="metadata"
-    poster="https://cdn.hyperserve.io/27503482-3ae8-4524-8fe2-2244752e9e28/7dd6e33b-867d-476c-a3d0-d1bb2ef7a332/preview.jpg">
-
-    <source src="https://cdn.hyperserve.io/27503482-3ae8-4524-8fe2-2244752e9e28/7dd6e33b-867d-476c-a3d0-d1bb2ef7a332/1080p.mp4" type="video/mp4">
-
-    Your browser does not support video playback.
-  </video>
-</div>
-
+.video-container video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+  border-radius: 8px;
+}
 <!-- ABOUT -->
 
 <section id="about">
